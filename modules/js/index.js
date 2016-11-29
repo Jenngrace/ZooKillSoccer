@@ -1,4 +1,4 @@
-
+     
 import GameObj from './GameObj.js';
 
 
@@ -23,14 +23,24 @@ import Score from './Score.js';
 console.log('loading game.');
 
 // Create a generic GameObj
+window.gameScreen = [];
 
-window.startScreen = new StartScreen('Zookill start');
 
-window.gameScreen = new GameScreen('Zookill Game');
+window.startScreen = new StartScreen('start', window.gameScreens );
+window.gameScreens[ 'start' ] = window.startScreen;
 
-window.LostScreen = new LostScreen('Zookill end');
 
-window.wonScreen = new WonScreen('Zookill end');
+window.gameScreen = new GameScreen('game');
+window.gameScreens[ 'game' ] = window.gameScreen;
+
+
+window.LostScreen = new LostScreen('lost');
+window.gameScreens[ 'lost'] = window.lostScreen;
+
+
+window.wonScreen = new WonScreen('won');
+window.gameScreens[ 'won' ] = window.wonScreen;
+
 
 window.score = new Score('game score object');
 
@@ -47,3 +57,17 @@ window.Animal = new Animal('Animal');
 window.Trump = new Animal('Trump');
 
 window.Player = new Player('Player');
+
+
+
+
+
+
+window.startScreen.show();
+
+
+
+
+
+
+

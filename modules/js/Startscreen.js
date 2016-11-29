@@ -12,8 +12,22 @@ export default class StartScreen extends Screen {
 
 this.dom = document.getElementById( 'start-screen');
 
+this.getStartButton();
 
 
-	} // end of class
+this.startButton.addEventListener( 'click', function () {
+
+window.whatsizt = window.gameScreen 
+this.screens[ 'start' ].hide();
+this.screens[ 'game' ].show();
+
+});
+
+this.getExitButton();
 
 }
+
+}
+
+
+

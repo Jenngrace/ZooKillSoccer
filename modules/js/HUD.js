@@ -12,3 +12,7 @@ constructor ( name ) {
 	} // end of class
 
 }
+	
+}
+
+

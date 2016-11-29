@@ -2,7 +2,7 @@ import GameObj from './GameObj.js';
 
 export default class Screen extends GameObj {
 	
-	constructor ( name ) {
+	constructor ( name, screenArray ) {
 
 	console.log('in Screen');
 	 // end of constructor
@@ -11,18 +11,26 @@ export default class Screen extends GameObj {
 
 	} // end of class
 
-show ()   {
+setScreens ( screenArray ) {
+this.screens = screenArray; 
+}
 
-this.dom.style.display = 'block';
+getStartButton () {
+ 
+ this.startButton = this.dom.getElementByClassName( 'game-start' ) [ 0 ];
+
+
+
+
 
 }
 
-hide ()  {
 
-this.dom.style.display = 'none';
+getExitButton () {
+
+	this.exitButton = this.dom.getElementByClassName( 'game-exit' ) [ 0 ];
 
 }
-
 
 
 

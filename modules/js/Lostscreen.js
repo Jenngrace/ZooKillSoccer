@@ -11,7 +11,11 @@ constructor ( name ) {
 this.dom = document.getElementById( 'lost-screen');
 	} // end of constructor
 
+	this.getStartButton();
 
+	this.getExitButton();
+
+}
 }
 
 //end of class

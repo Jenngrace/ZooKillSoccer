@@ -12,6 +12,12 @@ this.dom = document.getElementById( 'won-screen');
 	} // end of constructor
 
 
+this.getStartButton();
+
+this.getExitButton();
+
+} 
+
 }
 
 //end of class

@@ -9,6 +9,9 @@ constructor ( name ) {
 	
 	super( name );
 
+	this.dom = document.getElementById( 'game-score' );
+
+
 	} // end of class
 
 }

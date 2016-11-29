@@ -27,6 +27,36 @@ export default class GameObj {
 			this.name = newName;
 		}
 
+	show ()   {
+
+this.dom.style.display = 'block';
+
+}
+
+	hide ()  {
+
+this.dom.style.display = 'none';
+}
+
+setBackgroundImage( imgPath ) {
+
+this.dom.style.backgroundImage = "url(' " + imgPath + "')";
+
+}
+
+setForegroundImage( imgPath ) {
+
+	let img = new Image ();
+	img.src = imgPath;
+	this.dom.appendChild( img );
+	
+}
+
+
+
+
+
+
 		setId () {
 	        var d = new Date().getTime();
 	        if (window.performance && typeof window.performance.now === "function") {
