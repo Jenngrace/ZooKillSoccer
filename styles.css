@@ -1,0 +1,47 @@
+/* SASS FILE FOR ZOOKILLSOCCER */
+body {
+  background-color: #efe; }
+
+#game {
+  position: relative;
+  /* make child objects position correctly */ }
+
+/* initially, hide all the Screens */
+.app-screen {
+  display: none;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 588px;
+  height: 588px;
+  padding: 6px; }
+
+.app-screen h3 {
+  display:none;
+}
+
+.big-type {
+  color: white;
+  font-size: 2.5em; }
+
+/* score object */
+.hud {
+  display: none;
+  width: 150px;
+  -webkit-box-shadow: 4px 6px 22px 0px #6b341b;
+  -moz-box-shadow: 4px 6px 22px 0px #6b341b;
+  -ms-box-shadow: 4px 6px 22px 0px #6b341b;
+  box-shadow: 4px 6px 22px 0px #6b341b;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+  background-color: white;
+  border: 2px solid black;
+  padding: 4px 4px 4px 8px;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+/*# sourceMappingURL=styles.css.map */
